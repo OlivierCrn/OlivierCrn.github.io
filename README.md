@@ -17,4 +17,3 @@ Please don't forget to change all the metadata, it has been built to be SEO and 
 
 ## Acknowledgements
 All the random wallpapers are generated from the unsplash API and the user content from the randomuser.me API !
-"# whoiam" 
