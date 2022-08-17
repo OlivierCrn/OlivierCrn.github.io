@@ -6,17 +6,17 @@
     <meta name="author" content="Olivier Caron"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description"
-          content="Bonjour, je suis Olivier Caron, développeur fullstack spécialisé Php/Symfony, actuellement en poste chez CPAM dans la ville de Angoulême, France."/>
+          content="Bonjour, je suis Olivier Caron, développeur fullstack spécialisé Php/Symfony, actuellement en poste à la CPAM dans la ville de Angoulême, France."/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Développeur fullstack - Olivier Caron"/>
-    <meta property="og:image" content="src/img/card.png"/>
+    <meta property="og:image" content="./src/img/card.png"/>
     <meta property="og:description"
-          content="Bonjour, je suis Olivier Caron, développeur fullstack spécialisé Php/Symfony, actuellement en poste chez CPAM dans la ville de Angoulême, France."/>
+          content="Bonjour, je suis Olivier Caron, développeur fullstack spécialisé Php/Symfony, actuellement en poste à la CPAM dans la ville de Angoulême, France."/>
     <meta name="twitter:title" content="Développeur fullstack - Olivier Caron"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="src/img/card.png" />
+    <meta name="twitter:image" content="./src/img/card.png" />
     <meta name="twitter:description"
-          content="Bonjour, je suis Olivier Caron, développeur fullstack spécialisé Php/Symfony, actuellement en poste chez CPAM dans la ville de Angoulême, France."/>
+          content="Bonjour, je suis Olivier Caron, développeur fullstack spécialisé Php/Symfony, actuellement en poste à la CPAM dans la ville de Angoulême, France."/>
     <link rel="stylesheet" href="https://fontlibrary.org//face/roboto-1" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./src/css/base.css"/>
@@ -28,7 +28,12 @@
     <link rel="favicon" href="./src/img/favicon.png"/>
 </head>
 <body>
-<div class="page">
+<div class="enter state">
+    <button class="button-49" role="button">
+        Découvrir
+    </button>
+</div>
+<div class="page blur">
     <div class="card" id="person">
         <img id="person-picture" src="src/img/mypic.jpg"/>
         <img id="person-country" src="src/img/197560.png"/>
@@ -153,5 +158,14 @@
     </div>
 </div>
 <script src="./src/js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+<script>
+    $( ".button-49" ).click(function() {
+        $('.page').removeClass('blur').addClass('display');
+        $('.enter').addClass('clicked').removeClass('state');
+    });
+</script>
