@@ -31,12 +31,12 @@ body {
 .blur {
     opacity: 0.0;
     filter: blur(3px);
-    transition: 3s ease-in;
+    transition: 1.5s ease-in;
 }
 
 .display{
     opacity: 1;
-    transition: 3s ease-in;
+    transition: 1.5s ease-in;
 }
 
 .enter {
